@@ -78,17 +78,17 @@ const Navbar = () => {
                 <Image
                   src="/assets/logo/big-sky-salvage-logo.png"
                   alt="Big Sky Salvage Logo"
-                  width={96}
+                  width={144}
                   height={48}
-                  className="w-24 h-12 object-contain dark:hidden"
+                  className="w-36 h-12 object-contain dark:hidden"
                   priority
                 />
                 <Image
                   src="/assets/logo/big-sky-salvage-logo-dark-bg.png"
                   alt="Big Sky Salvage Logo"
-                  width={96}
+                  width={144}
                   height={48}
-                  className="hidden w-24 h-12 object-contain dark:block"
+                  className="hidden w-36 h-12 object-contain dark:block"
                   priority
                 />
               </Link>

@@ -125,7 +125,7 @@ const Hero = () => {
         {/* Mobile Hero Text */}
         <div className="w-full text-white text-center lg:hidden px-4 pt-8 pb-6">
           <div className="max-w-sm mx-auto">
-            <p className="inline-block bg-white/10 backdrop-blur-sm border border-white/20 rounded-full px-3 py-1 text-xs text-orange-300 mb-3">
+            <p className="inline-block bg-white/10 backdrop-blur-sm border border-white/20 rounded-full px-3 py-1 text-xs text-yellow-300 mb-3">
               {siteConfig.parentTagline}
             </p>
             <h1 className="text-2xl sm:text-3xl font-bold mb-3 leading-tight">
@@ -141,7 +141,7 @@ const Hero = () => {
 
         {/* Desktop Left Content */}
         <div className="flex-1 text-white text-center xl:text-left mb-6 lg:mb-8 xl:mb-0 px-2 pt-20 sm:pt-24 lg:pt-32 xl:pt-0 hidden lg:block">
-          <p className="inline-block bg-white/10 backdrop-blur-sm border border-white/20 rounded-full px-4 py-1.5 text-sm text-orange-300 mb-5">
+          <p className="inline-block bg-white/10 backdrop-blur-sm border border-white/20 rounded-full px-4 py-1.5 text-sm text-yellow-300 mb-5">
             {siteConfig.parentTagline} &mdash; {siteConfig.chainTagline}
           </p>
           <h1 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl xl:text-6xl font-bold mb-4 sm:mb-6 leading-tight">

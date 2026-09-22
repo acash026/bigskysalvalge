@@ -27,10 +27,9 @@ const Footer = () => {
               <Image
                 src="/assets/logo/big-sky-salvage-logo-dark-bg.png"
                 alt="Big Sky Salvage Logo"
-                width={80}
-                height={80}
-                className="w-20 h-20 object-contain"
-                unoptimized
+                width={168}
+                height={56}
+                className="w-42 h-14 object-contain"
               />
             </div>
             <p className="text-gray-400 mb-1">{siteConfig.parentTagline}</p>

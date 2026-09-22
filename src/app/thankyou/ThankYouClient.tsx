@@ -51,7 +51,7 @@ export default function ThankYouClient() {
             Your request has been submitted successfully
           </p>
 
-          <div className="bg-orange-50 dark:bg-orange-900/20 rounded-lg p-4 sm:p-6 mb-8">
+          <div className="bg-yellow-50 dark:bg-blue-900/20 rounded-lg p-4 sm:p-6 mb-8">
             <h3 className="text-lg font-semibold text-primary mb-2">Check Your Email</h3>
             <p className="text-sm sm:text-base text-gray-700 dark:text-gray-300">
               We&apos;ve sent you a confirmation email with your request details.

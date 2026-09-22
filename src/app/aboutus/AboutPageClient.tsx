@@ -164,7 +164,7 @@ export default function AboutPageClient() {
         <div className="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-14 sm:py-20 md:py-28">
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 lg:gap-16 items-center">
             <div className="text-center lg:text-left">
-              <div className="inline-flex items-center bg-white/10 border border-white/10 px-3 py-1.5 rounded-full text-orange-300 text-xs md:text-sm font-medium mb-4 md:mb-6">
+              <div className="inline-flex items-center bg-white/10 border border-white/10 px-3 py-1.5 rounded-full text-yellow-300 text-xs md:text-sm font-medium mb-4 md:mb-6">
                 {siteConfig.parentTagline} &mdash; {siteConfig.chainTagline}
               </div>
               <h1 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-bold text-white mb-4 md:mb-6 leading-tight">
@@ -254,14 +254,14 @@ export default function AboutPageClient() {
                   service, and unbeatable value.
                 </p>
 
-                <div className="bg-orange-50 dark:bg-orange-950/30 border-l-4 border-primary p-5 sm:p-6 md:p-8 rounded-md">
+                <div className="bg-yellow-50 dark:bg-blue-950/30 border-l-4 border-primary p-5 sm:p-6 md:p-8 rounded-md">
                   <Quote className="w-5 h-5 sm:w-6 sm:h-6 md:w-8 md:h-8 text-primary mb-3 md:mb-4" />
-                  <p className="text-orange-900 dark:text-orange-200 italic text-base sm:text-lg md:text-xl mb-3 md:mb-4 leading-relaxed">
+                  <p className="text-blue-950 dark:text-yellow-200 italic text-base sm:text-lg md:text-xl mb-3 md:mb-4 leading-relaxed">
                     &ldquo;Our success comes from treating every customer like
                     they&apos;re our only customer. We don&apos;t just sell parts &ndash; we
                     build relationships that last.&rdquo;
                   </p>
-                  <p className="text-orange-800 dark:text-orange-300 font-bold text-sm md:text-base">
+                  <p className="text-blue-900 dark:text-yellow-300 font-bold text-sm md:text-base">
                     &mdash; The Big Sky Salvage Team
                   </p>
                 </div>
@@ -383,7 +383,7 @@ export default function AboutPageClient() {
 
         {/* Advantage */}
         <div className="my-16 sm:my-20 md:my-28">
-          <div className="bg-orange-50 dark:bg-orange-950/20 rounded-xl p-6 sm:p-8 md:p-16">
+          <div className="bg-yellow-50 dark:bg-blue-950/20 rounded-xl p-6 sm:p-8 md:p-16">
             <div className="text-center mb-10 sm:mb-12 md:mb-16">
               <h2 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-bold text-gray-900 dark:text-white mb-3 sm:mb-4 md:mb-6">
                 The <span className="text-primary">Big Sky Salvage</span> Advantage

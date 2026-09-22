@@ -38,7 +38,7 @@ const AboutSection = () => {
       {/* Hero Section */}
       <div className="relative bg-gray-900">
         <div className="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-16 sm:py-20 md:py-24 text-center">
-          <p className="inline-block bg-white/10 border border-white/10 rounded-full px-3.5 py-1.5 text-orange-300 text-xs sm:text-sm mb-5 sm:mb-6">
+          <p className="inline-block bg-white/10 border border-white/10 rounded-full px-3.5 py-1.5 text-yellow-300 text-xs sm:text-sm mb-5 sm:mb-6">
             {siteConfig.parentTagline} &mdash; {siteConfig.chainTagline}
           </p>
           <h2 className="text-3xl sm:text-4xl md:text-6xl font-bold text-white mb-5 sm:mb-6 leading-tight">
@@ -104,11 +104,11 @@ const AboutSection = () => {
               honest service, and unbeatable value.
             </p>
 
-            <div className="bg-orange-50 dark:bg-orange-950/30 border-l-4 border-primary p-5 sm:p-6 rounded-md">
-              <p className="text-orange-900 dark:text-orange-200 italic text-sm sm:text-base mb-3">
+            <div className="bg-yellow-50 dark:bg-blue-950/30 border-l-4 border-primary p-5 sm:p-6 rounded-md">
+              <p className="text-blue-950 dark:text-yellow-200 italic text-sm sm:text-base mb-3">
                 &ldquo;Our success comes from treating every customer like they&rsquo;re our only customer.&rdquo;
               </p>
-              <p className="text-sm text-orange-800 dark:text-orange-300 font-semibold">
+              <p className="text-sm text-blue-900 dark:text-yellow-300 font-semibold">
                 &mdash; The Big Sky Salvage Team
               </p>
             </div>
@@ -180,7 +180,7 @@ const AboutSection = () => {
         </div>
 
         {/* Advantage list */}
-        <div className="bg-orange-50 dark:bg-orange-950/20 rounded-xl p-6 sm:p-10 lg:p-12 mb-16 sm:mb-24">
+        <div className="bg-yellow-50 dark:bg-blue-950/20 rounded-xl p-6 sm:p-10 lg:p-12 mb-16 sm:mb-24">
           <h3 className="text-xl sm:text-2xl lg:text-3xl font-bold text-center text-gray-900 dark:text-white mb-3">
             The <span className="text-primary">Big Sky Salvage</span> Advantage
           </h3>

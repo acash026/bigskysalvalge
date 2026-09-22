@@ -42,9 +42,9 @@
 }
 
 /*
-  Brand palette: warm charcoal neutrals + the logo's signature orange,
-  replacing the stock shadcn "slate" defaults so the site reads as its
-  own brand rather than an unstyled template.
+  Brand palette: sampled directly from the Big Sky Salvage logo — a
+  royal blue primary with a gold/yellow accent, replacing the old
+  Spikey Salvage orange so the site matches the real mark.
 */
 :root {
   --radius: 0.75rem;
@@ -54,31 +54,31 @@
   --card-foreground: oklch(0.205 0.015 285);
   --popover: oklch(1 0 0);
   --popover-foreground: oklch(0.205 0.015 285);
-  --primary: oklch(0.705 0.191 42.5);
+  --primary: oklch(0.423 0.192 261.8);
   --primary-foreground: oklch(0.99 0 0);
   --secondary: oklch(0.965 0.006 285);
   --secondary-foreground: oklch(0.235 0.015 285);
   --muted: oklch(0.965 0.006 285);
   --muted-foreground: oklch(0.495 0.014 285);
-  --accent: oklch(0.955 0.03 55);
-  --accent-foreground: oklch(0.35 0.1 45);
+  --accent: oklch(0.94 0.07 100);
+  --accent-foreground: oklch(0.354 0.166 262.2);
   --destructive: oklch(0.577 0.245 27.325);
   --border: oklch(0.9 0.006 285);
   --input: oklch(0.9 0.006 285);
-  --ring: oklch(0.705 0.191 42.5 / 45%);
-  --chart-1: oklch(0.705 0.191 42.5);
-  --chart-2: oklch(0.6 0.118 184.704);
+  --ring: oklch(0.423 0.192 261.8 / 45%);
+  --chart-1: oklch(0.423 0.192 261.8);
+  --chart-2: oklch(0.921 0.194 103.2);
   --chart-3: oklch(0.398 0.07 227.392);
   --chart-4: oklch(0.828 0.189 84.429);
   --chart-5: oklch(0.769 0.188 70.08);
   --sidebar: oklch(0.99 0 0);
   --sidebar-foreground: oklch(0.205 0.015 285);
-  --sidebar-primary: oklch(0.705 0.191 42.5);
+  --sidebar-primary: oklch(0.423 0.192 261.8);
   --sidebar-primary-foreground: oklch(0.99 0 0);
   --sidebar-accent: oklch(0.965 0.006 285);
   --sidebar-accent-foreground: oklch(0.235 0.015 285);
   --sidebar-border: oklch(0.9 0.006 285);
-  --sidebar-ring: oklch(0.705 0.191 42.5 / 45%);
+  --sidebar-ring: oklch(0.423 0.192 261.8 / 45%);
 }
 
 .dark {
@@ -88,31 +88,31 @@
   --card-foreground: oklch(0.97 0.003 285);
   --popover: oklch(0.235 0.014 285);
   --popover-foreground: oklch(0.97 0.003 285);
-  --primary: oklch(0.705 0.191 42.5);
+  --primary: oklch(0.58 0.19 261.8);
   --primary-foreground: oklch(0.99 0 0);
   --secondary: oklch(0.29 0.014 285);
   --secondary-foreground: oklch(0.97 0.003 285);
   --muted: oklch(0.29 0.014 285);
   --muted-foreground: oklch(0.7 0.012 285);
-  --accent: oklch(0.32 0.04 50);
-  --accent-foreground: oklch(0.95 0.02 55);
+  --accent: oklch(0.32 0.05 100);
+  --accent-foreground: oklch(0.921 0.194 103.2);
   --destructive: oklch(0.704 0.191 22.216);
   --border: oklch(1 0 0 / 10%);
   --input: oklch(1 0 0 / 15%);
-  --ring: oklch(0.705 0.191 42.5 / 45%);
-  --chart-1: oklch(0.705 0.191 42.5);
-  --chart-2: oklch(0.696 0.17 162.48);
+  --ring: oklch(0.58 0.19 261.8 / 45%);
+  --chart-1: oklch(0.58 0.19 261.8);
+  --chart-2: oklch(0.921 0.194 103.2);
   --chart-3: oklch(0.769 0.188 70.08);
   --chart-4: oklch(0.627 0.265 303.9);
   --chart-5: oklch(0.645 0.246 16.439);
   --sidebar: oklch(0.235 0.014 285);
   --sidebar-foreground: oklch(0.97 0.003 285);
-  --sidebar-primary: oklch(0.705 0.191 42.5);
+  --sidebar-primary: oklch(0.58 0.19 261.8);
   --sidebar-primary-foreground: oklch(0.99 0 0);
   --sidebar-accent: oklch(0.29 0.014 285);
   --sidebar-accent-foreground: oklch(0.97 0.003 285);
   --sidebar-border: oklch(1 0 0 / 10%);
-  --sidebar-ring: oklch(0.705 0.191 42.5 / 45%);
+  --sidebar-ring: oklch(0.58 0.19 261.8 / 45%);
 }
 
 @layer base {

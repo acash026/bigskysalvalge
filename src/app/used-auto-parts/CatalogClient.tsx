@@ -338,7 +338,7 @@ export default function CatalogClient() {
 
                     <div className="flex flex-wrap gap-1.5 mb-4">
                       {part.features.slice(0, 3).map((feature, i) => (
-                        <span key={i} className="bg-orange-50 dark:bg-orange-950/40 text-orange-700 dark:text-orange-300 text-xs px-2.5 py-1 rounded-md font-medium">
+                        <span key={i} className="bg-yellow-50 dark:bg-blue-950/40 text-blue-900 dark:text-yellow-300 text-xs px-2.5 py-1 rounded-md font-medium">
                           {feature}
                         </span>
                       ))}

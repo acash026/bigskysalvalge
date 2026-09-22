@@ -39,7 +39,7 @@ export default function NotFound() {
             Sorry, the page you&apos;re looking for doesn&apos;t exist or has been moved.
           </p>
 
-          <div className="bg-orange-50 dark:bg-orange-900/20 rounded-lg p-4 sm:p-6 mb-8">
+          <div className="bg-yellow-50 dark:bg-blue-900/20 rounded-lg p-4 sm:p-6 mb-8">
             <h3 className="text-lg font-semibold text-primary mb-3">What you can do</h3>
             <div className="space-y-3 text-left">
               <div className="flex items-center">
