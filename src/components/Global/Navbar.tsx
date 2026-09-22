@@ -69,7 +69,28 @@ const Navbar = () => {
 
   return (
     <>
-      <nav className="bg-white dark:bg-gray-900 shadow-lg border-b border-gray-200 dark:border-gray-700 sticky top-0 z-50">
+      <div className="sticky top-0 z-50">
+        {/* Utility bar */}
+        <div className="hidden lg:block bg-primary text-white">
+          <div className="max-w-7xl mx-auto px-6 lg:px-8 flex justify-between items-center py-2 text-xs">
+            <div className="flex items-center gap-5 text-blue-100">
+              <span>{siteConfig.hours.weekday}</span>
+              <span className="text-blue-300">|</span>
+              <span>{siteConfig.hours.saturday}</span>
+            </div>
+            <div className="flex items-center gap-5">
+              <a href={siteConfig.phoneHref} className="font-semibold hover:text-yellow-300 transition-colors duration-200">
+                Toll Free: {siteConfig.phone}
+              </a>
+              <span className="text-blue-300">|</span>
+              <a href={`mailto:${siteConfig.publicEmail}`} className="hover:text-yellow-300 transition-colors duration-200">
+                {siteConfig.publicEmail}
+              </a>
+            </div>
+          </div>
+        </div>
+
+      <nav className="bg-white dark:bg-gray-900 shadow-lg border-b border-gray-200 dark:border-gray-700">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="flex justify-between items-center h-16">
             {/* Logo */}
@@ -166,23 +187,9 @@ const Navbar = () => {
 
             {/* Right side buttons */}
             <div className="hidden md:flex items-center space-x-4">
-              <a
-                href={siteConfig.phoneHref}
-                className="text-gray-700 dark:text-gray-300 hover:text-primary flex items-center transition-colors duration-200"
-              >
-                <svg className="h-4 w-4 mr-1" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                  <path
-                    strokeLinecap="round"
-                    strokeLinejoin="round"
-                    strokeWidth={2}
-                    d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z"
-                  />
-                </svg>
-                {siteConfig.phone}
-              </a>
               <button
                 onClick={() => setModalOpen(true)}
-                className="bg-primary hover:bg-primary/90 text-primary-foreground px-6 py-2 rounded-full text-sm font-medium transition-colors duration-200"
+                className="bg-primary hover:bg-primary/90 text-primary-foreground px-6 py-2 rounded-lg text-sm font-medium transition-colors duration-200"
               >
                 FREE QUOTE
               </button>
@@ -341,7 +348,7 @@ const Navbar = () => {
               <div className="px-3 py-2">
                 <button
                   onClick={() => setModalOpen(true)}
-                  className="w-full bg-primary hover:bg-primary/90 text-primary-foreground px-4 py-2 rounded-full text-sm font-medium transition-colors duration-200"
+                  className="w-full bg-primary hover:bg-primary/90 text-primary-foreground px-4 py-2 rounded-lg text-sm font-medium transition-colors duration-200"
                 >
                   FREE QUOTE
                 </button>
@@ -350,7 +357,7 @@ const Navbar = () => {
               <div className="px-3 py-2">
                 <a
                   href={siteConfig.phoneHref}
-                  className="w-full flex items-center justify-center bg-gray-100 dark:bg-gray-700 text-gray-700 dark:text-gray-300 hover:text-primary px-4 py-2 rounded-full text-sm font-medium transition-colors duration-200"
+                  className="w-full flex items-center justify-center bg-gray-100 dark:bg-gray-700 text-gray-700 dark:text-gray-300 hover:text-primary px-4 py-2 rounded-lg text-sm font-medium transition-colors duration-200"
                 >
                   <svg className="h-4 w-4 mr-1" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                     <path
@@ -367,6 +374,7 @@ const Navbar = () => {
           </div>
         )}
       </nav>
+      </div>
       <AutoPartsModalForm isOpen={modalOpen} onClose={() => setModalOpen(false)} />
     </>
   );

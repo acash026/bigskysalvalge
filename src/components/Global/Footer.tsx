@@ -19,10 +19,26 @@ const Footer = () => {
 
   return (
     <footer className="bg-gray-900 text-white">
-      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12">
-        <div className="grid grid-cols-1 md:grid-cols-4 gap-8">
-          {/* Company Info */}
+      {/* CTA banner */}
+      <div className="bg-yellow-400">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-6 sm:py-8 flex flex-col sm:flex-row items-center justify-between gap-4 text-center sm:text-left">
           <div>
+            <h3 className="text-lg sm:text-2xl font-bold text-blue-950">Need a Part Fast?</h3>
+            <p className="text-blue-900/80 text-sm sm:text-base">Get a free, no-obligation quote in minutes.</p>
+          </div>
+          <button
+            onClick={() => setModalOpen(true)}
+            className="shrink-0 bg-blue-950 hover:bg-blue-900 text-white px-6 py-3 rounded-lg font-semibold transition-colors duration-200"
+          >
+            Get Your Free Quote
+          </button>
+        </div>
+      </div>
+
+      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12">
+        <div className="grid grid-cols-1 md:grid-cols-12 gap-8">
+          {/* Company Info */}
+          <div className="md:col-span-4">
             <div className="flex items-center mb-4">
               <Image
                 src="/assets/logo/big-sky-salvage-logo-dark-bg.png"
@@ -44,7 +60,7 @@ const Footer = () => {
                 target="_blank"
                 rel="noopener noreferrer"
                 aria-label="WhatsApp"
-                className="text-gray-400 hover:text-primary transition-colors duration-200"
+                className="text-gray-400 hover:text-yellow-400 transition-colors duration-200"
               >
                 <FaWhatsapp className="h-6 w-6" />
               </a>
@@ -52,33 +68,33 @@ const Footer = () => {
           </div>
 
           {/* Quick Links */}
-          <div>
+          <div className="md:col-span-2">
             <h3 className="text-lg font-semibold mb-4">Quick Links</h3>
             <ul className="space-y-2">
               <li>
-                <Link href="/" onClick={handleLinkClick} className="text-gray-400 hover:text-primary transition-colors duration-200">
+                <Link href="/" onClick={handleLinkClick} className="text-gray-400 hover:text-yellow-400 transition-colors duration-200">
                   Home
                 </Link>
               </li>
               <li>
-                <Link href="/aboutus" onClick={handleLinkClick} className="text-gray-400 hover:text-primary transition-colors duration-200">
+                <Link href="/aboutus" onClick={handleLinkClick} className="text-gray-400 hover:text-yellow-400 transition-colors duration-200">
                   About Us
                 </Link>
               </li>
               <li>
-                <Link href="/used-auto-parts" onClick={handleLinkClick} className="text-gray-400 hover:text-primary transition-colors duration-200">
+                <Link href="/used-auto-parts" onClick={handleLinkClick} className="text-gray-400 hover:text-yellow-400 transition-colors duration-200">
                   Used Auto Parts
                 </Link>
               </li>
               <li>
-                <Link href="/contact" onClick={handleLinkClick} className="text-gray-400 hover:text-primary transition-colors duration-200">
+                <Link href="/contact" onClick={handleLinkClick} className="text-gray-400 hover:text-yellow-400 transition-colors duration-200">
                   Contact
                 </Link>
               </li>
               <li>
                 <button
                   onClick={() => setModalOpen(true)}
-                  className="text-gray-400 hover:text-primary transition-colors duration-200"
+                  className="text-gray-400 hover:text-yellow-400 transition-colors duration-200"
                 >
                   Free Quote
                 </button>
@@ -87,7 +103,7 @@ const Footer = () => {
           </div>
 
           {/* Parts Categories */}
-          <div>
+          <div className="md:col-span-3">
             <h3 className="text-lg font-semibold mb-4">Parts Categories</h3>
             <ul className="space-y-2">
               {featuredParts.map((part) => (
@@ -95,7 +111,7 @@ const Footer = () => {
                   <Link
                     href={`/used-auto-parts/${part.slug}`}
                     onClick={handleLinkClick}
-                    className="text-gray-400 hover:text-primary transition-colors duration-200"
+                    className="text-gray-400 hover:text-yellow-400 transition-colors duration-200"
                   >
                     {part.name}
                   </Link>
@@ -105,24 +121,24 @@ const Footer = () => {
           </div>
 
           {/* Contact Info */}
-          <div>
+          <div className="md:col-span-3">
             <h3 className="text-lg font-semibold mb-4">Contact Us</h3>
             <ul className="space-y-2">
               <li className="text-gray-400">
                 Toll Free:{" "}
-                <a href={siteConfig.phoneHref} className="hover:text-primary transition-colors duration-200">
+                <a href={siteConfig.phoneHref} className="hover:text-yellow-400 transition-colors duration-200">
                   {siteConfig.phone}
                 </a>
               </li>
               <li className="text-gray-400">
                 Alt:{" "}
-                <a href={siteConfig.altPhoneHref} className="hover:text-primary transition-colors duration-200">
+                <a href={siteConfig.altPhoneHref} className="hover:text-yellow-400 transition-colors duration-200">
                   {siteConfig.altPhone}
                 </a>
               </li>
               <li className="text-gray-400">
                 Email:{" "}
-                <a href={`mailto:${siteConfig.publicEmail}`} className="hover:text-primary transition-colors duration-200">
+                <a href={`mailto:${siteConfig.publicEmail}`} className="hover:text-yellow-400 transition-colors duration-200">
                   {siteConfig.publicEmail}
                 </a>
               </li>

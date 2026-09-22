@@ -33,7 +33,7 @@ const GlobalOverlay = () => {
           </a>
           <button
             onClick={() => setModalOpen(true)}
-            className="bg-primary text-primary-foreground rounded-full px-4 py-2.5 shadow-md hover:bg-primary/90 transition-colors flex items-center gap-2"
+            className="bg-primary text-primary-foreground rounded-lg px-4 py-2.5 shadow-md hover:bg-primary/90 transition-colors flex items-center gap-2"
             aria-label="Get a quote"
           >
             <FaFileInvoice className="text-sm" />

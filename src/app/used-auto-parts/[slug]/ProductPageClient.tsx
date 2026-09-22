@@ -31,7 +31,7 @@ export default function ProductPageClient({ part }: { part: Part }) {
 
         <div className="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 sm:py-16 grid lg:grid-cols-2 gap-10 lg:gap-12 items-center w-full">
           <div className="text-white">
-            <div className="inline-flex items-center gap-2 bg-white/10 border border-white/10 rounded-full px-3.5 py-1.5 text-xs sm:text-sm text-yellow-300 mb-5 sm:mb-6">
+            <div className="inline-flex items-center gap-2 bg-yellow-400 rounded-lg px-3.5 py-1.5 text-xs sm:text-sm text-blue-950 font-semibold mb-5 sm:mb-6">
               <Icon className="w-4 h-4" />
               {part.category}
             </div>

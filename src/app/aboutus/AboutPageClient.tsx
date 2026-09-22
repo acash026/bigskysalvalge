@@ -164,7 +164,7 @@ export default function AboutPageClient() {
         <div className="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-14 sm:py-20 md:py-28">
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 lg:gap-16 items-center">
             <div className="text-center lg:text-left">
-              <div className="inline-flex items-center bg-white/10 border border-white/10 px-3 py-1.5 rounded-full text-yellow-300 text-xs md:text-sm font-medium mb-4 md:mb-6">
+              <div className="inline-flex items-center bg-yellow-400 px-3 py-1.5 rounded-lg text-blue-950 text-xs md:text-sm font-semibold mb-4 md:mb-6">
                 {siteConfig.parentTagline} &mdash; {siteConfig.chainTagline}
               </div>
               <h1 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-bold text-white mb-4 md:mb-6 leading-tight">

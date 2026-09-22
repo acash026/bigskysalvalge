@@ -101,7 +101,7 @@ export default function CatalogClient() {
 
           <div className="grid lg:grid-cols-2 gap-10 lg:gap-12 items-center">
             <div className="space-y-6 sm:space-y-8">
-              <div className="inline-flex items-center gap-2 px-3 py-1.5 bg-white/10 border border-white/10 rounded-full text-white/80 text-xs sm:text-sm font-medium">
+              <div className="inline-flex items-center gap-2 px-3 py-1.5 bg-yellow-400 rounded-lg text-blue-950 text-xs sm:text-sm font-semibold">
                 {siteConfig.parentTagline}
               </div>
 
@@ -482,7 +482,7 @@ export default function CatalogClient() {
       <div className="fixed bottom-4 left-1/2 -translate-x-1/2 z-40 lg:hidden">
         <button
           onClick={() => setModalOpen(true)}
-          className="bg-primary text-primary-foreground px-5 py-2.5 rounded-full font-semibold shadow-lg flex items-center gap-2"
+          className="bg-primary text-primary-foreground px-5 py-2.5 rounded-lg font-semibold shadow-lg flex items-center gap-2"
         >
           Get Quote
           <ArrowRight className="w-4 h-4" />

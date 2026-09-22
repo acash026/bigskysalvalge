@@ -64,18 +64,17 @@ const AboutSection = () => {
         </div>
       </div>
 
-      {/* Stats Section */}
-      <div className="relative -mt-8 sm:-mt-10 mb-16 sm:mb-20">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="grid grid-cols-2 lg:grid-cols-4 gap-3 sm:gap-6">
+      {/* Stats Bar */}
+      <div className="bg-blue-950 border-t border-white/10 mb-16 sm:mb-20">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-8 sm:py-10">
+          <div className="grid grid-cols-2 lg:grid-cols-4 divide-x divide-white/10">
             {stats.map((stat, index) => (
-              <div key={index} className="bg-white dark:bg-gray-800 rounded-lg border border-gray-100 dark:border-gray-700 p-5 sm:p-8 text-center">
-                <div className="w-12 h-12 sm:w-14 sm:h-14 bg-primary/10 rounded-lg flex items-center justify-center mx-auto mb-3 sm:mb-4 text-primary">
-                  {stat.icon}
+              <div key={index} className="flex items-center gap-3 sm:gap-4 px-3 sm:px-6 first:pl-0">
+                <div className="text-yellow-400 shrink-0">{stat.icon}</div>
+                <div>
+                  <div className="text-xl sm:text-2xl lg:text-3xl font-bold text-white leading-tight">{stat.number}</div>
+                  <div className="text-xs sm:text-sm text-blue-200">{stat.label}</div>
                 </div>
-                <div className="text-xl sm:text-2xl lg:text-3xl font-bold text-gray-900 dark:text-white mb-1">{stat.number}</div>
-                <div className="text-sm sm:text-base font-semibold text-gray-700 dark:text-gray-300 mb-0.5">{stat.label}</div>
-                <div className="text-xs sm:text-sm text-gray-500 dark:text-gray-400">{stat.description}</div>
               </div>
             ))}
           </div>
