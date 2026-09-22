@@ -6,9 +6,9 @@ import UsedAutoPartsInDemand from "@/components/Home/UsedAutoPartsInDemand";
 import Testimonials from "@/components/Testimonials";
 
 export const metadata: Metadata = {
-  title: "Used OEM Grade A Auto Parts in St Cloud, FL",
+  title: "Used OEM Grade A Auto Parts in Kissimmee, FL",
   description:
-    "Big Sky Salvage offers high-quality used OEM Grade A auto parts in St Cloud, FL. Shop used engines, transmissions, wheels, radiators and more with fast US shipping.",
+    "Big Sky Salvage offers high-quality used OEM Grade A auto parts in Kissimmee, FL. Shop used engines, transmissions, wheels, radiators and more with fast US shipping.",
   alternates: { canonical: "/" },
 };
 

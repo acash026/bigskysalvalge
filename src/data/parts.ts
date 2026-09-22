@@ -76,7 +76,7 @@ export const PARTS: Part[] = [
       { title: "V8 Engines", description: "High-performance engines for trucks, sports cars, and luxury vehicles" },
     ],
     metaDescription:
-      "Find quality used engines at Big Sky Salvage in St Cloud, FL. OEM-grade, tested for performance, and backed by warranty — save up to 70% versus buying new.",
+      "Find quality used engines at Big Sky Salvage in Kissimmee, FL. OEM-grade, tested for performance, and backed by warranty — save up to 70% versus buying new.",
   },
   {
     id: 2,
@@ -117,7 +117,7 @@ export const PARTS: Part[] = [
       { title: "CVT Transmissions", description: "Continuously variable transmissions for optimal fuel efficiency" },
     ],
     metaDescription:
-      "Shop premium used transmissions at Big Sky Salvage in St Cloud, FL. Every unit is tested for smooth shifting and reliability, with warranty coverage included.",
+      "Shop premium used transmissions at Big Sky Salvage in Kissimmee, FL. Every unit is tested for smooth shifting and reliability, with warranty coverage included.",
   },
   {
     id: 3,
@@ -158,7 +158,7 @@ export const PARTS: Part[] = [
       { title: "Performance Wheels", description: "High-performance wheels for racing, sports, and premium vehicles" },
     ],
     metaDescription:
-      "Browse used wheels at Big Sky Salvage in St Cloud, FL. Balanced, safety-tested, and OEM quality — save up to 60% versus new wheels, all backed by warranty.",
+      "Browse used wheels at Big Sky Salvage in Kissimmee, FL. Balanced, safety-tested, and OEM quality — save up to 60% versus new wheels, all backed by warranty.",
   },
   {
     id: 4,
@@ -195,7 +195,7 @@ export const PARTS: Part[] = [
     ],
     typesSpecialize: [],
     metaDescription:
-      "Stay cool with tested used AC compressors from Big Sky Salvage in St Cloud, FL. OEM quality, cooling-performance verified, and fully warranty backed.",
+      "Stay cool with tested used AC compressors from Big Sky Salvage in Kissimmee, FL. OEM quality, cooling-performance verified, and fully warranty backed.",
   },
   {
     id: 5,
@@ -236,7 +236,7 @@ export const PARTS: Part[] = [
       { title: "LED Headlights", description: "Modern, energy-efficient lighting with extended lifespan" },
     ],
     metaDescription:
-      "Restore visibility with used headlights from Big Sky Salvage in St Cloud, FL. Clear lenses, safety tested, and covered by warranty for peace of mind.",
+      "Restore visibility with used headlights from Big Sky Salvage in Kissimmee, FL. Clear lenses, safety tested, and covered by warranty for peace of mind.",
   },
   {
     id: 6,
@@ -277,7 +277,7 @@ export const PARTS: Part[] = [
       { title: "Electronic 4WD", description: "Modern electronic control systems for seamless operation" },
     ],
     metaDescription:
-      "Shop used transfer cases at Big Sky Salvage in St Cloud, FL. Tested for reliable 4WD power distribution and backed by our parts warranty.",
+      "Shop used transfer cases at Big Sky Salvage in Kissimmee, FL. Tested for reliable 4WD power distribution and backed by our parts warranty.",
   },
   {
     id: 7,
@@ -314,7 +314,7 @@ export const PARTS: Part[] = [
     ],
     typesSpecialize: [],
     metaDescription:
-      "Find durable used axle assemblies at Big Sky Salvage in St Cloud, FL. OEM quality, bench tested, and warrantied for dependable drivetrain performance.",
+      "Find durable used axle assemblies at Big Sky Salvage in Kissimmee, FL. OEM quality, bench tested, and warrantied for dependable drivetrain performance.",
   },
   {
     id: 8,
@@ -351,7 +351,7 @@ export const PARTS: Part[] = [
     ],
     typesSpecialize: [],
     metaDescription:
-      "Get reliable used drive shafts at Big Sky Salvage in St Cloud, FL. Balanced, tested, and backed by warranty for a smooth, vibration-free ride.",
+      "Get reliable used drive shafts at Big Sky Salvage in Kissimmee, FL. Balanced, tested, and backed by warranty for a smooth, vibration-free ride.",
   },
   {
     id: 9,
@@ -392,7 +392,7 @@ export const PARTS: Part[] = [
       { title: "Hybrid-Compatible", description: "Specialized units matched to hybrid drivetrain requirements" },
     ],
     metaDescription:
-      "Shop tested used alternators at Big Sky Salvage in St Cloud, FL. Voltage-verified, OEM quality, and backed by warranty for dependable charging.",
+      "Shop tested used alternators at Big Sky Salvage in Kissimmee, FL. Voltage-verified, OEM quality, and backed by warranty for dependable charging.",
   },
   {
     id: 10,
@@ -433,7 +433,7 @@ export const PARTS: Part[] = [
       { title: "Performance Radiators", description: "High-performance radiators for racing, sports, and heavy-duty vehicles" },
     ],
     metaDescription:
-      "Keep your engine cool with used radiators from Big Sky Salvage in St Cloud, FL. Pressure tested for leak-free, reliable cooling performance.",
+      "Keep your engine cool with used radiators from Big Sky Salvage in Kissimmee, FL. Pressure tested for leak-free, reliable cooling performance.",
   },
   {
     id: 11,
@@ -474,7 +474,7 @@ export const PARTS: Part[] = [
       { title: "Tilt & Telescopic Columns", description: "Adjustable steering columns for optimal driver position and comfort" },
     ],
     metaDescription:
-      "Shop used steering columns at Big Sky Salvage in St Cloud, FL. Safety tested, OEM quality, and warrantied for precise, reliable steering control.",
+      "Shop used steering columns at Big Sky Salvage in Kissimmee, FL. Safety tested, OEM quality, and warrantied for precise, reliable steering control.",
   },
   {
     id: 12,
@@ -515,7 +515,7 @@ export const PARTS: Part[] = [
       { title: "Performance Headers", description: "Tuned manifolds for enhanced flow on performance builds" },
     ],
     metaDescription:
-      "Find crack-tested used exhaust manifolds at Big Sky Salvage in St Cloud, FL. Machined gasket surfaces and warranty included on every unit.",
+      "Find crack-tested used exhaust manifolds at Big Sky Salvage in Kissimmee, FL. Machined gasket surfaces and warranty included on every unit.",
   },
   {
     id: 13,
@@ -556,7 +556,7 @@ export const PARTS: Part[] = [
       { title: "Performance Intakes", description: "Tuned manifolds for improved throttle response" },
     ],
     metaDescription:
-      "Shop tested used intake manifolds at Big Sky Salvage in St Cloud, FL. Complete with sensors, vacuum-tested, and backed by warranty.",
+      "Shop tested used intake manifolds at Big Sky Salvage in Kissimmee, FL. Complete with sensors, vacuum-tested, and backed by warranty.",
   },
   {
     id: 14,
@@ -597,7 +597,7 @@ export const PARTS: Part[] = [
       { title: "All-Wheel-Drive Axles", description: "Precision-fit axles for AWD and 4WD drivetrains" },
     ],
     metaDescription:
-      "Find tested used axles at Big Sky Salvage in St Cloud, FL. New CV joints and boots, rotation-tested, and backed by warranty.",
+      "Find tested used axles at Big Sky Salvage in Kissimmee, FL. New CV joints and boots, rotation-tested, and backed by warranty.",
   },
 ];
 

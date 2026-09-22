@@ -1,10 +1,10 @@
 export const siteConfig = {
   name: "Big Sky Salvage",
   shortName: "Big Sky Salvage",
-  parentTagline: "Used OEM Auto Parts in St Cloud, FL",
+  parentTagline: "Used OEM Auto Parts in Kissimmee, FL",
   chainTagline: "One of the Biggest Auto Parts Chains in the USA",
   description:
-    "Big Sky Salvage offers high-quality used OEM auto parts in St Cloud, FL. Shop used engines, transmissions, wheels, radiators and more with fast US shipping.",
+    "Big Sky Salvage offers high-quality used OEM auto parts in Kissimmee, FL. Shop used engines, transmissions, wheels, radiators and more with fast US shipping.",
   url: "https://www.bigskysalvageus.com",
   domain: "bigskysalvageus.com",
 
@@ -21,12 +21,12 @@ export const siteConfig = {
   adminEmail: "williamautoparts1950@gmail.com",
 
   address: {
-    line1: "5255 E Irlo Bronson Memorial Hwy Unit S395d",
-    city: "St Cloud",
+    line1: "3131 Spikey Way",
+    city: "Kissimmee",
     state: "FL",
-    zip: "34771",
+    zip: "34744",
     country: "United States",
-    full: "5255 E Irlo Bronson Memorial Hwy Unit S395d, St Cloud, FL 34771",
+    full: "3131 Spikey Way, Kissimmee, FL 34744",
   },
 
   hours: {
@@ -36,7 +36,7 @@ export const siteConfig = {
   },
 
   mapEmbedSrc:
-    "https://www.google.com/maps?q=5255+E+Irlo+Bronson+Memorial+Hwy+Unit+S395d,+St+Cloud,+FL+34771&output=embed",
+    "https://www.google.com/maps?q=3131+Spikey+Way,+Kissimmee,+FL+34744&output=embed",
 
   social: {
     whatsapp: "https://wa.me/13214412855",

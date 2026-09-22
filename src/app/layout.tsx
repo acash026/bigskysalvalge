@@ -22,13 +22,13 @@ const montserrat = Montserrat({
 export const metadata: Metadata = {
   metadataBase: new URL(siteConfig.url),
   title: {
-    default: `${siteConfig.name} | Used OEM Auto Parts in St Cloud, FL`,
+    default: `${siteConfig.name} | Used OEM Auto Parts in Kissimmee, FL`,
     template: `%s | ${siteConfig.name}`,
   },
   description: siteConfig.description,
   keywords: [
     "Big Sky Salvage",
-    "used auto parts St Cloud FL",
+    "used auto parts Kissimmee FL",
     "salvage yard Florida",
     "used engines",
     "used transmissions",
@@ -39,7 +39,7 @@ export const metadata: Metadata = {
     canonical: "/",
   },
   openGraph: {
-    title: `${siteConfig.name} | Used OEM Auto Parts in St Cloud, FL`,
+    title: `${siteConfig.name} | Used OEM Auto Parts in Kissimmee, FL`,
     description: siteConfig.description,
     url: siteConfig.url,
     siteName: siteConfig.name,
@@ -48,7 +48,7 @@ export const metadata: Metadata = {
   },
   twitter: {
     card: "summary_large_image",
-    title: `${siteConfig.name} | Used OEM Auto Parts in St Cloud, FL`,
+    title: `${siteConfig.name} | Used OEM Auto Parts in Kissimmee, FL`,
     description: siteConfig.description,
     images: ["/assets/logo/big-sky-salvage-logo.png"],
   },
