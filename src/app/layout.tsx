@@ -147,7 +147,7 @@ export default function RootLayout({
 
         <noscript>
           <iframe
-            src="https://www.googletagmanager.com/ns.html?id=AW-17587383909"
+            src="https://www.googletagmanager.com/ns.html?id=AW-18472420453"
             height="0"
             width="0"
             style={{ display: "none", visibility: "hidden" }}
