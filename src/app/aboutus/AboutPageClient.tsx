@@ -3,8 +3,20 @@
 import Link from "next/link";
 import Image from "next/image";
 import {
-  Shield, Truck, CheckCircle, Wrench, Target, Eye, Timer, DollarSign,
-  Phone, Mail, Heart, Clock, ChevronRight, Quote,
+  Shield,
+  Truck,
+  CheckCircle,
+  Wrench,
+  Target,
+  Eye,
+  Timer,
+  DollarSign,
+  Phone,
+  Mail,
+  Heart,
+  Clock,
+  ChevronRight,
+  Quote,
 } from "lucide-react";
 import { useState } from "react";
 import { AutoPartsModalForm } from "@/components/Home/AutoPartsForm";
@@ -19,14 +31,21 @@ const timelineData = [
     content: (
       <div>
         <p className="mb-4 text-sm font-normal text-muted-foreground md:text-base">
-          Exploring the auto parts industry and identifying gaps in the
-          market &mdash; the earliest steps toward what would become Big Sky
-          Salvage.
+          Exploring the auto parts industry and identifying gaps in the market
+          &mdash; the earliest steps toward what would become Big Sky Salvage.
         </p>
         <div className="grid grid-cols-2 gap-2 md:gap-4">
           {[4, 5, 6, 7].map((n) => (
-            <div key={n} className="relative h-20 md:h-44 lg:h-60 rounded-lg overflow-hidden">
-              <Image src={`/assets/images/timeline/${n}.png`} alt="Big Sky Salvage timeline" fill className="object-cover" />
+            <div
+              key={n}
+              className="relative h-20 md:h-44 lg:h-60 rounded-lg overflow-hidden"
+            >
+              <Image
+                src={`/assets/images/timeline/${n}.png`}
+                alt="Big Sky Salvage timeline"
+                fill
+                className="object-cover"
+              />
             </div>
           ))}
         </div>
@@ -43,8 +62,16 @@ const timelineData = [
         </p>
         <div className="grid grid-cols-2 gap-2 md:gap-4">
           {[1, 2, 3, 4].map((n) => (
-            <div key={n} className="relative h-20 md:h-44 lg:h-60 rounded-lg overflow-hidden">
-              <Image src={`/assets/images/timeline/${n}.png`} alt="Big Sky Salvage timeline" fill className="object-cover" />
+            <div
+              key={n}
+              className="relative h-20 md:h-44 lg:h-60 rounded-lg overflow-hidden"
+            >
+              <Image
+                src={`/assets/images/timeline/${n}.png`}
+                alt="Big Sky Salvage timeline"
+                fill
+                className="object-cover"
+              />
             </div>
           ))}
         </div>
@@ -56,9 +83,8 @@ const timelineData = [
     content: (
       <div>
         <p className="mb-4 text-sm font-normal text-muted-foreground md:text-base">
-          Now one of the biggest auto parts chains in
-          the USA &mdash; with a growing inventory and the same
-          customer-first standards.
+          Now one of the biggest auto parts chains in the USA &mdash; with a
+          growing inventory and the same customer-first standards.
         </p>
         <div className="mb-4 md:mb-8 space-y-1.5">
           <div className="flex items-center gap-2 text-sm text-muted-foreground md:text-base">
@@ -76,8 +102,16 @@ const timelineData = [
         </div>
         <div className="grid grid-cols-2 gap-2 md:gap-4">
           {[9, 10, 11, 12].map((n) => (
-            <div key={n} className="relative h-20 md:h-44 lg:h-60 rounded-lg overflow-hidden">
-              <Image src={`/assets/images/timeline/${n}.png`} alt="Big Sky Salvage timeline" fill className="object-cover" />
+            <div
+              key={n}
+              className="relative h-20 md:h-44 lg:h-60 rounded-lg overflow-hidden"
+            >
+              <Image
+                src={`/assets/images/timeline/${n}.png`}
+                alt="Big Sky Salvage timeline"
+                fill
+                className="object-cover"
+              />
             </div>
           ))}
         </div>
@@ -115,43 +149,107 @@ const values = [
   {
     icon: <Shield className="w-6 h-6 md:w-7 md:h-7" />,
     title: "Uncompromising Quality",
-    description: "Our 15-point inspection process ensures every part meets or exceeds OEM standards. We don't just sell parts – we deliver peace of mind.",
-    features: ["15-point inspection process", "OEM quality standards", "Performance tested", "Certified technicians"],
+    description:
+      "Our 15-point inspection process ensures every part meets or exceeds OEM standards. We don't just sell parts – we deliver peace of mind.",
+    features: [
+      "15-point inspection process",
+      "OEM quality standards",
+      "Performance tested",
+      "Certified technicians",
+    ],
   },
   {
     icon: <Timer className="w-6 h-6 md:w-7 md:h-7" />,
     title: "Lightning-Fast Service",
-    description: "Time is money in the automotive industry. Our streamlined processes ensure you get your parts when you need them.",
-    features: ["Same-day shipping", "Real-time tracking", "Express delivery options", "24/7 order processing"],
+    description:
+      "Time is money in the automotive industry. Our streamlined processes ensure you get your parts when you need them.",
+    features: [
+      "Same-day shipping",
+      "Real-time tracking",
+      "Express delivery options",
+      "24/7 order processing",
+    ],
   },
   {
     icon: <DollarSign className="w-6 h-6 md:w-7 md:h-7" />,
     title: "Exceptional Value",
-    description: "Premium quality doesn't have to come with a premium price. We prove it every day with our competitive pricing.",
-    features: ["Up to 70% savings", "Price matching policy", "Volume discounts", "Transparent pricing"],
+    description:
+      "Premium quality doesn't have to come with a premium price. We prove it every day with our competitive pricing.",
+    features: [
+      "Up to 70% savings",
+      "Price matching policy",
+      "Volume discounts",
+      "Transparent pricing",
+    ],
   },
   {
     icon: <Heart className="w-6 h-6 md:w-7 md:h-7" />,
     title: "Customer-First Approach",
-    description: "Every decision we make is guided by one question: 'How does this benefit our customers?' Your success is our success.",
-    features: ["ASE-certified support", "Technical expertise", "Installation guidance", "Lifetime support"],
+    description:
+      "Every decision we make is guided by one question: 'How does this benefit our customers?' Your success is our success.",
+    features: [
+      "ASE-certified support",
+      "Technical expertise",
+      "Installation guidance",
+      "Lifetime support",
+    ],
   },
 ];
 
 const qualitySteps = [
-  { step: "01", title: "Acquisition", description: "Parts sourced from verified suppliers and reputable salvage yards across the Big Sky Salvage network", icon: <Truck className="w-5 h-5 md:w-6 md:h-6" /> },
-  { step: "02", title: "Inspection", description: "15-point quality inspection by certified technicians", icon: <Eye className="w-5 h-5 md:w-6 md:h-6" /> },
-  { step: "03", title: "Testing", description: "Functional testing to ensure optimal performance", icon: <Wrench className="w-5 h-5 md:w-6 md:h-6" /> },
-  { step: "04", title: "Certification", description: "Quality certification and warranty assignment", icon: <CheckCircle className="w-5 h-5 md:w-6 md:h-6" /> },
+  {
+    step: "01",
+    title: "Acquisition",
+    description:
+      "Parts sourced from verified suppliers and reputable salvage yards across the Big Sky Salvage network",
+    icon: <Truck className="w-5 h-5 md:w-6 md:h-6" />,
+  },
+  {
+    step: "02",
+    title: "Inspection",
+    description: "15-point quality inspection by certified technicians",
+    icon: <Eye className="w-5 h-5 md:w-6 md:h-6" />,
+  },
+  {
+    step: "03",
+    title: "Testing",
+    description: "Functional testing to ensure optimal performance",
+    icon: <Wrench className="w-5 h-5 md:w-6 md:h-6" />,
+  },
+  {
+    step: "04",
+    title: "Certification",
+    description: "Quality certification and warranty assignment",
+    icon: <CheckCircle className="w-5 h-5 md:w-6 md:h-6" />,
+  },
 ];
 
 const advantageFeatures = [
-  { title: "15-Point Quality Inspection", description: "Every part undergoes comprehensive testing by certified technicians" },
-  { title: "90-Day Warranty Minimum", description: "Industry-leading warranty coverage on all components" },
-  { title: "Same-Day Shipping", description: "Orders placed before 3PM EST ship the same day" },
-  { title: "ASE-Certified Technical Support", description: "Expert guidance from certified automotive professionals" },
-  { title: "VIN-Specific Matching", description: "Precision part matching using advanced VIN decoding" },
-  { title: "30-Day Easy Returns", description: "Hassle-free return policy with prepaid shipping labels" },
+  {
+    title: "15-Point Quality Inspection",
+    description:
+      "Every part undergoes comprehensive testing by certified technicians",
+  },
+  {
+    title: "90-Day Warranty Minimum",
+    description: "Industry-leading warranty coverage on all components",
+  },
+  {
+    title: "Same-Day Shipping",
+    description: "Orders placed before 3PM EST ship the same day",
+  },
+  {
+    title: "ASE-Certified Technical Support",
+    description: "Expert guidance from certified automotive professionals",
+  },
+  {
+    title: "VIN-Specific Matching",
+    description: "Precision part matching using advanced VIN decoding",
+  },
+  {
+    title: "30-Day Easy Returns",
+    description: "Hassle-free return policy with prepaid shipping labels",
+  },
 ];
 
 export default function AboutPageClient() {
@@ -194,20 +292,36 @@ export default function AboutPageClient() {
 
               <div className="grid grid-cols-2 gap-2.5 md:gap-4">
                 <div className="bg-white/[0.06] border border-white/10 rounded-lg p-3 md:p-4">
-                  <div className="text-xl md:text-2xl lg:text-3xl font-bold text-white mb-1">15,000+</div>
-                  <div className="text-xs md:text-sm text-gray-300">Happy Customers</div>
+                  <div className="text-xl md:text-2xl lg:text-3xl font-bold text-white mb-1">
+                    15,000+
+                  </div>
+                  <div className="text-xs md:text-sm text-gray-300">
+                    Happy Customers
+                  </div>
                 </div>
                 <div className="bg-white/[0.06] border border-white/10 rounded-lg p-3 md:p-4">
-                  <div className="text-xl md:text-2xl lg:text-3xl font-bold text-white mb-1">75,000+</div>
-                  <div className="text-xs md:text-sm text-gray-300">Parts Delivered</div>
+                  <div className="text-xl md:text-2xl lg:text-3xl font-bold text-white mb-1">
+                    75,000+
+                  </div>
+                  <div className="text-xs md:text-sm text-gray-300">
+                    Parts Delivered
+                  </div>
                 </div>
                 <div className="bg-white/[0.06] border border-white/10 rounded-lg p-3 md:p-4">
-                  <div className="text-xl md:text-2xl lg:text-3xl font-bold text-white mb-1">99.9%</div>
-                  <div className="text-xs md:text-sm text-gray-300">Quality Rating</div>
+                  <div className="text-xl md:text-2xl lg:text-3xl font-bold text-white mb-1">
+                    99.9%
+                  </div>
+                  <div className="text-xs md:text-sm text-gray-300">
+                    Quality Rating
+                  </div>
                 </div>
                 <div className="bg-white/[0.06] border border-white/10 rounded-lg p-3 md:p-4">
-                  <div className="text-xl md:text-2xl lg:text-3xl font-bold text-white mb-1">65%</div>
-                  <div className="text-xs md:text-sm text-gray-300">Average Savings</div>
+                  <div className="text-xl md:text-2xl lg:text-3xl font-bold text-white mb-1">
+                    65%
+                  </div>
+                  <div className="text-xs md:text-sm text-gray-300">
+                    Average Savings
+                  </div>
                 </div>
               </div>
             </div>
@@ -235,18 +349,22 @@ export default function AboutPageClient() {
           <div>
             <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 md:gap-16 items-center">
               <div className="relative h-56 sm:h-72 md:h-96 rounded-xl overflow-hidden border border-gray-200 dark:border-gray-700">
-                <Image src="/about/warehouse.png" alt="Big Sky Salvage yard" fill className="object-cover" />
+                <Image
+                  src="/about/about_engine.jpg"
+                  alt="Big Sky Salvage yard"
+                  fill
+                  className="object-cover"
+                />
               </div>
               <div>
                 <h3 className="text-xl sm:text-2xl md:text-3xl lg:text-4xl font-bold text-gray-900 dark:text-white mb-4 md:mb-6">
                   Quality You Can Trust, Prices You&apos;ll Love
                 </h3>
                 <p className="text-sm sm:text-base md:text-lg text-gray-600 dark:text-gray-300 mb-4 md:mb-6 leading-relaxed">
-                  At Big Sky Salvage, we&apos;re committed
-                  to delivering top-quality auto parts at prices that won&apos;t
-                  break the bank. Every part we offer is carefully inspected
-                  to ensure performance, reliability, and customer
-                  satisfaction.
+                  At Big Sky Salvage, we&apos;re committed to delivering
+                  top-quality auto parts at prices that won&apos;t break the
+                  bank. Every part we offer is carefully inspected to ensure
+                  performance, reliability, and customer satisfaction.
                 </p>
                 <p className="text-sm sm:text-base md:text-lg text-gray-600 dark:text-gray-300 mb-6 md:mb-8 leading-relaxed">
                   Whether you&apos;re fixing up your daily driver or restoring a
@@ -258,8 +376,8 @@ export default function AboutPageClient() {
                   <Quote className="w-5 h-5 sm:w-6 sm:h-6 md:w-8 md:h-8 text-primary mb-3 md:mb-4" />
                   <p className="text-blue-950 dark:text-yellow-200 italic text-base sm:text-lg md:text-xl mb-3 md:mb-4 leading-relaxed">
                     &ldquo;Our success comes from treating every customer like
-                    they&apos;re our only customer. We don&apos;t just sell parts &ndash; we
-                    build relationships that last.&rdquo;
+                    they&apos;re our only customer. We don&apos;t just sell
+                    parts &ndash; we build relationships that last.&rdquo;
                   </p>
                   <p className="text-blue-900 dark:text-yellow-300 font-bold text-sm md:text-base">
                     &mdash; The Big Sky Salvage Team
@@ -274,7 +392,9 @@ export default function AboutPageClient() {
                   <div className="w-11 h-11 md:w-14 md:h-14 bg-primary/10 rounded-lg flex items-center justify-center mr-4 md:mr-6">
                     <Target className="w-5 h-5 md:w-7 md:h-7 text-primary" />
                   </div>
-                  <h3 className="text-lg md:text-2xl lg:text-3xl font-bold text-gray-900 dark:text-white">Our Mission</h3>
+                  <h3 className="text-lg md:text-2xl lg:text-3xl font-bold text-gray-900 dark:text-white">
+                    Our Mission
+                  </h3>
                 </div>
                 <p className="text-gray-600 dark:text-gray-300 text-sm md:text-base lg:text-lg leading-relaxed mb-4 md:mb-6">
                   Our mission is to provide reliable, thoroughly tested, and
@@ -294,19 +414,21 @@ export default function AboutPageClient() {
                   <div className="w-11 h-11 md:w-14 md:h-14 bg-primary/10 rounded-lg flex items-center justify-center mr-4 md:mr-6">
                     <Eye className="w-5 h-5 md:w-7 md:h-7 text-primary" />
                   </div>
-                  <h3 className="text-lg md:text-2xl lg:text-3xl font-bold text-gray-900 dark:text-white">Our Vision</h3>
+                  <h3 className="text-lg md:text-2xl lg:text-3xl font-bold text-gray-900 dark:text-white">
+                    Our Vision
+                  </h3>
                 </div>
                 <p className="text-gray-600 dark:text-gray-300 text-sm md:text-base lg:text-lg leading-relaxed mb-4 md:mb-6">
                   Our vision is to become the most trusted and affordable
-                  destination for high-quality used auto parts, recognized
-                  not just for our competitive pricing, but for the genuine
-                  value and reliability we deliver to every customer.
+                  destination for high-quality used auto parts, recognized not
+                  just for our competitive pricing, but for the genuine value
+                  and reliability we deliver to every customer.
                 </p>
                 <p className="text-gray-600 dark:text-gray-300 text-sm md:text-base lg:text-lg leading-relaxed">
                   We aim to support vehicle owners, auto repair professionals,
-                  and businesses by offering a smart, sustainable alternative
-                  to buying new parts&mdash;without compromising performance
-                  or safety.
+                  and businesses by offering a smart, sustainable alternative to
+                  buying new parts&mdash;without compromising performance or
+                  safety.
                 </p>
               </div>
             </div>
@@ -322,23 +444,34 @@ export default function AboutPageClient() {
               Why Choose <span className="text-primary">Big Sky Salvage</span>?
             </h2>
             <p className="text-sm sm:text-base md:text-lg lg:text-xl text-gray-600 dark:text-gray-300 max-w-3xl mx-auto">
-              Our core values drive everything we do, from part selection to customer service
+              Our core values drive everything we do, from part selection to
+              customer service
             </p>
           </div>
 
           <div className="grid grid-cols-1 sm:grid-cols-2 gap-4 sm:gap-6 md:gap-8">
             {values.map((value, index) => (
-              <div key={index} className="bg-white dark:bg-gray-800 border border-gray-100 dark:border-gray-700 rounded-xl p-5 sm:p-6 md:p-10">
+              <div
+                key={index}
+                className="bg-white dark:bg-gray-800 border border-gray-100 dark:border-gray-700 rounded-xl p-5 sm:p-6 md:p-10"
+              >
                 <div className="flex items-center mb-4 sm:mb-6 md:mb-8">
                   <div className="w-12 h-12 md:w-16 md:h-16 bg-primary/10 rounded-lg flex items-center justify-center mr-4 md:mr-6 text-primary">
                     {value.icon}
                   </div>
-                  <h3 className="text-lg md:text-2xl lg:text-3xl font-bold text-gray-900 dark:text-white">{value.title}</h3>
+                  <h3 className="text-lg md:text-2xl lg:text-3xl font-bold text-gray-900 dark:text-white">
+                    {value.title}
+                  </h3>
                 </div>
-                <p className="text-gray-700 dark:text-gray-300 mb-4 sm:mb-6 md:mb-8 leading-relaxed text-sm md:text-base lg:text-lg">{value.description}</p>
+                <p className="text-gray-700 dark:text-gray-300 mb-4 sm:mb-6 md:mb-8 leading-relaxed text-sm md:text-base lg:text-lg">
+                  {value.description}
+                </p>
                 <div className="grid grid-cols-2 gap-2 md:gap-3">
                   {value.features.map((feature, idx) => (
-                    <div key={idx} className="bg-gray-50 dark:bg-gray-900 px-3 py-2 md:px-4 md:py-3 rounded-lg text-xs md:text-sm font-medium text-gray-700 dark:text-gray-300 flex items-center">
+                    <div
+                      key={idx}
+                      className="bg-gray-50 dark:bg-gray-900 px-3 py-2 md:px-4 md:py-3 rounded-lg text-xs md:text-sm font-medium text-gray-700 dark:text-gray-300 flex items-center"
+                    >
                       <CheckCircle className="w-3.5 h-3.5 md:w-4 md:h-4 text-primary mr-1.5 md:mr-2 flex-shrink-0" />
                       {feature}
                     </div>
@@ -356,7 +489,8 @@ export default function AboutPageClient() {
               Our <span className="text-primary">Quality</span> Process
             </h2>
             <p className="text-sm sm:text-base md:text-lg lg:text-xl text-gray-600 dark:text-gray-300 max-w-3xl mx-auto">
-              Every part goes through our rigorous quality assurance process before reaching your hands
+              Every part goes through our rigorous quality assurance process
+              before reaching your hands
             </p>
           </div>
 
@@ -367,9 +501,15 @@ export default function AboutPageClient() {
                   <div className="w-10 h-10 sm:w-12 sm:h-12 md:w-16 md:h-16 bg-primary/10 rounded-lg flex items-center justify-center mx-auto mb-3 sm:mb-4 md:mb-6 text-primary">
                     {step.icon}
                   </div>
-                  <div className="text-2xl sm:text-4xl md:text-5xl lg:text-6xl font-bold text-primary mb-2 sm:mb-3 md:mb-4">{step.step}</div>
-                  <h3 className="text-sm sm:text-lg md:text-xl font-bold text-gray-900 dark:text-white mb-1.5 sm:mb-3 md:mb-4">{step.title}</h3>
-                  <p className="text-gray-600 dark:text-gray-300 leading-relaxed text-xs sm:text-sm md:text-base">{step.description}</p>
+                  <div className="text-2xl sm:text-4xl md:text-5xl lg:text-6xl font-bold text-primary mb-2 sm:mb-3 md:mb-4">
+                    {step.step}
+                  </div>
+                  <h3 className="text-sm sm:text-lg md:text-xl font-bold text-gray-900 dark:text-white mb-1.5 sm:mb-3 md:mb-4">
+                    {step.title}
+                  </h3>
+                  <p className="text-gray-600 dark:text-gray-300 leading-relaxed text-xs sm:text-sm md:text-base">
+                    {step.description}
+                  </p>
                 </div>
                 {index < qualitySteps.length - 1 && (
                   <div className="hidden md:block absolute top-1/2 -right-4 w-8 h-0.5 bg-gray-200 dark:bg-gray-700 z-0"></div>
@@ -386,23 +526,32 @@ export default function AboutPageClient() {
           <div className="bg-yellow-50 dark:bg-blue-950/20 rounded-xl p-6 sm:p-8 md:p-16">
             <div className="text-center mb-10 sm:mb-12 md:mb-16">
               <h2 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-bold text-gray-900 dark:text-white mb-3 sm:mb-4 md:mb-6">
-                The <span className="text-primary">Big Sky Salvage</span> Advantage
+                The <span className="text-primary">Big Sky Salvage</span>{" "}
+                Advantage
               </h2>
               <p className="text-sm sm:text-base md:text-lg lg:text-xl text-gray-600 dark:text-gray-300 max-w-3xl mx-auto">
-                Experience the difference with our comprehensive suite of services and guarantees
+                Experience the difference with our comprehensive suite of
+                services and guarantees
               </p>
             </div>
 
             <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-3 sm:gap-4 md:gap-6 lg:gap-8">
               {advantageFeatures.map((feature, index) => (
-                <div key={index} className="bg-white dark:bg-gray-800 rounded-lg p-5 sm:p-6 md:p-8">
+                <div
+                  key={index}
+                  className="bg-white dark:bg-gray-800 rounded-lg p-5 sm:p-6 md:p-8"
+                >
                   <div className="flex items-start mb-2 md:mb-4">
                     <div className="mr-3 md:mr-4 mt-1">
                       <CheckCircle className="w-4 h-4 sm:w-5 sm:h-5 md:w-6 md:h-6 text-primary" />
                     </div>
                     <div>
-                      <h3 className="text-sm sm:text-base md:text-lg font-bold text-gray-900 dark:text-white mb-1 md:mb-2">{feature.title}</h3>
-                      <p className="text-gray-600 dark:text-gray-300 leading-relaxed text-xs sm:text-sm md:text-base">{feature.description}</p>
+                      <h3 className="text-sm sm:text-base md:text-lg font-bold text-gray-900 dark:text-white mb-1 md:mb-2">
+                        {feature.title}
+                      </h3>
+                      <p className="text-gray-600 dark:text-gray-300 leading-relaxed text-xs sm:text-sm md:text-base">
+                        {feature.description}
+                      </p>
                     </div>
                   </div>
                 </div>
@@ -418,7 +567,8 @@ export default function AboutPageClient() {
               Get in <span className="text-primary">Touch</span>
             </h2>
             <p className="text-sm sm:text-base md:text-lg lg:text-xl text-gray-600 dark:text-gray-300 max-w-3xl mx-auto">
-              Have questions? Our team is here to help you find the perfect parts for your needs
+              Have questions? Our team is here to help you find the perfect
+              parts for your needs
             </p>
           </div>
 
@@ -427,8 +577,12 @@ export default function AboutPageClient() {
               <div className="w-12 h-12 md:w-16 md:h-16 bg-primary/10 rounded-lg flex items-center justify-center mx-auto mb-4 sm:mb-6 text-primary">
                 <Phone className="w-5 h-5 md:w-7 md:h-7" />
               </div>
-              <h3 className="text-lg md:text-xl font-bold text-gray-900 dark:text-white mb-2 md:mb-3">Call Us</h3>
-              <p className="text-gray-600 dark:text-gray-300 mb-3 md:mb-4 text-sm md:text-base">Speak with our experts</p>
+              <h3 className="text-lg md:text-xl font-bold text-gray-900 dark:text-white mb-2 md:mb-3">
+                Call Us
+              </h3>
+              <p className="text-gray-600 dark:text-gray-300 mb-3 md:mb-4 text-sm md:text-base">
+                Speak with our experts
+              </p>
               <p className="text-lg md:text-2xl font-bold text-primary">
                 <a href={siteConfig.phoneHref}>{siteConfig.phone}</a>
               </p>
@@ -438,10 +592,16 @@ export default function AboutPageClient() {
               <div className="w-12 h-12 md:w-16 md:h-16 bg-primary/10 rounded-lg flex items-center justify-center mx-auto mb-4 sm:mb-6 text-primary">
                 <Mail className="w-5 h-5 md:w-7 md:h-7" />
               </div>
-              <h3 className="text-lg md:text-xl font-bold text-gray-900 dark:text-white mb-2 md:mb-3">Email Us</h3>
-              <p className="text-gray-600 dark:text-gray-300 mb-3 md:mb-4 text-sm md:text-base">We respond within 24 hours</p>
+              <h3 className="text-lg md:text-xl font-bold text-gray-900 dark:text-white mb-2 md:mb-3">
+                Email Us
+              </h3>
+              <p className="text-gray-600 dark:text-gray-300 mb-3 md:mb-4 text-sm md:text-base">
+                We respond within 24 hours
+              </p>
               <p className="text-base md:text-xl font-bold text-primary break-all">
-                <a href={`mailto:${siteConfig.publicEmail}`}>{siteConfig.publicEmail}</a>
+                <a href={`mailto:${siteConfig.publicEmail}`}>
+                  {siteConfig.publicEmail}
+                </a>
               </p>
             </div>
 
@@ -449,9 +609,15 @@ export default function AboutPageClient() {
               <div className="w-12 h-12 md:w-16 md:h-16 bg-primary/10 rounded-lg flex items-center justify-center mx-auto mb-4 sm:mb-6 text-primary">
                 <Clock className="w-5 h-5 md:w-7 md:h-7" />
               </div>
-              <h3 className="text-lg md:text-xl font-bold text-gray-900 dark:text-white mb-2 md:mb-3">Business Hours</h3>
-              <p className="text-gray-600 dark:text-gray-300 mb-2 md:mb-3 text-sm md:text-base">{siteConfig.hours.weekday}</p>
-              <p className="text-gray-600 dark:text-gray-300 text-sm md:text-base">{siteConfig.hours.saturday}</p>
+              <h3 className="text-lg md:text-xl font-bold text-gray-900 dark:text-white mb-2 md:mb-3">
+                Business Hours
+              </h3>
+              <p className="text-gray-600 dark:text-gray-300 mb-2 md:mb-3 text-sm md:text-base">
+                {siteConfig.hours.weekday}
+              </p>
+              <p className="text-gray-600 dark:text-gray-300 text-sm md:text-base">
+                {siteConfig.hours.saturday}
+              </p>
             </div>
           </div>
         </div>
@@ -460,13 +626,14 @@ export default function AboutPageClient() {
         <div className="mb-10 sm:mb-12 md:mb-16">
           <div className="bg-gray-900 rounded-xl p-6 sm:p-8 md:p-16 text-center">
             <h2 className="text-xl sm:text-2xl md:text-3xl lg:text-4xl xl:text-5xl font-bold text-white mb-4 md:mb-6">
-              Ready to Experience the <span className="text-primary">Big Sky Salvage</span> Difference?
+              Ready to Experience the{" "}
+              <span className="text-primary">Big Sky Salvage</span> Difference?
             </h2>
             <p className="text-sm sm:text-base md:text-lg lg:text-xl text-gray-300 mb-6 md:mb-8 max-w-4xl mx-auto leading-relaxed">
-              Join thousands of satisfied customers who trust Big Sky
-              Salvage for their automotive needs. Whether you&apos;re a
-              professional mechanic or a weekend warrior, we&apos;ve got the
-              quality parts you need at prices you&apos;ll love.
+              Join thousands of satisfied customers who trust Big Sky Salvage
+              for their automotive needs. Whether you&apos;re a professional
+              mechanic or a weekend warrior, we&apos;ve got the quality parts
+              you need at prices you&apos;ll love.
             </p>
             <div className="flex flex-col sm:flex-row justify-center gap-3 md:gap-4 lg:gap-6">
               <button
@@ -487,7 +654,10 @@ export default function AboutPageClient() {
           </div>
         </div>
       </div>
-      <AutoPartsModalForm isOpen={modalOpen} onClose={() => setModalOpen(false)} />
+      <AutoPartsModalForm
+        isOpen={modalOpen}
+        onClose={() => setModalOpen(false)}
+      />
     </div>
   );
 }
